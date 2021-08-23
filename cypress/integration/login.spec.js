@@ -8,7 +8,8 @@ describe('Acesso', () => {
         cy.visit('http://automationpractice.com/index.php');
 
         cy.get('.login').click();
-        cy.get('#email_create').type('cmauricio@test.com');
+        //cy.get('#email_create').type('cmauricio@test.com');
+        cy.get('#email_create').type('cmauricio1@test.com');
         cy.get('#SubmitCreate > span').click();
 
 
@@ -35,7 +36,7 @@ describe('Acesso', () => {
         cy.get('#phone_mobile').type('9865479898')
         cy.get('#alias').clear()// Foi a forma que encontrei para a apafar o texto que estava no campo
         cy.get('#alias').type('carlosoloveiramauricio@gmail.com')
-        cy.get('#submitAccount > span').click();
+       // cy.get('#submitAccount > span').click();
         //ce65cefcbafad255f0866d3b32d32058
 
        
