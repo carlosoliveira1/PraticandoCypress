@@ -29,12 +29,14 @@ describe('Acesso', () => {
         cy.get('#address2').type('Rio de janeiro - 36')
         cy.get('#city').type('Rio de janeiro')
         cy.get('#id_state').select('Oklahoma').should('have.value', '36')
-        cy.get('#postcode').type('2002001')
+        cy.get('#postcode').type('01200')
         cy.get('#other').type('Teste de campo de informação.')
         cy.get('#phone').type('9865479898')
         cy.get('#phone_mobile').type('9865479898')
         cy.get('#alias').clear()// Foi a forma que encontrei para a apafar o texto que estava no campo
         cy.get('#alias').type('carlosoloveiramauricio@gmail.com')
+        cy.get('#submitAccount > span').click();
+        //ce65cefcbafad255f0866d3b32d32058
 
        
 
