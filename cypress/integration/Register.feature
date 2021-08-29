@@ -5,11 +5,10 @@ Feature: Login site de compras
 
     @testeum
     Scenario: Criar uma conta no site
-        Given acesso a pagina de login do site de compras 
-        # And  visualiso a pagina de autenticação
-        # And  na área CREATE AN ACCOUNT, informo <email>
-        # When clico no botão CREATE AN ACCOUNT
-        # And  devo visualizar a pagina de cadastro 
-        # And  devo preencher a pagina de cadastro e confirmar
-        # Then devo visualizar a pagina my acount
+        //Given que nao possuo conta no site de compras
+        And acesso a pagina de login do site de compras
+        And clico no botao sigin
+        And informo o email na area create an account
+        When clico no botão create an account
+        Then sou direcionado para a tela de autenticacao
      
